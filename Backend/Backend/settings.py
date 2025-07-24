@@ -144,7 +144,8 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://campus-hub-nine.vercel.app"
+    "https://campus-hub-nine.vercel.app",
+    "https://campushub-ys56.onrender.com"
 ]
 
 CORS_ALLOW_HEADERS = (

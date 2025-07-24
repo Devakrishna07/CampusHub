@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import api from '../services/api';
+import logo from '../assets/logo.png';
 
 function Login() {
     const [username, setUsername] = useState('');
@@ -28,6 +29,7 @@ function Login() {
 
   return (
     <div className="w-screen min-h-screen bg-gradient-to-r from-black to-gray-900 flex items-center justify-center">
+        <img src={logo} alt="CampusHub" className="absolute top-1 left-1 w-40" />
         <form onSubmit={handleLogin} className="backdrop-blur-md bg-white/10 border border-white/10 shadow-lg rounded-xl p-2 flex flex-col items-center justify-center w-[90%] xl:w-[30%] h-full md:aspect-square">
             <h1 className="md:absolute top-8 left-10 text-white text-2xl font-bold shadow-xl">Login</h1>
             <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} className="rounded-xl p-2 bg-gray-900 m-4 w-[70%] hover:bg-white cursor-pointer" />

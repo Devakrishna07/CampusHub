@@ -30,7 +30,7 @@ function Signup() {
             });
 
             alert("user created successfully");
-            navigate('/login');
+            navigate('/');
 
         } catch (err) {
             alert("Try again later");
@@ -57,7 +57,7 @@ function Signup() {
                 </button>
                 <div className="w-full flex items-center justify-center pb-3">
                     <h1 className='font-bold text-white hover:text-blue-500 cursor-pointer text-sm sm:text-base'>
-                        <a href="/login">login existing account ?</a>
+                        <a href="/">login existing account ?</a>
                     </h1>
                 </div>
             </form>

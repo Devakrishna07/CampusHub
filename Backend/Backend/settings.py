@@ -144,6 +144,7 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://campus-hub-nine.vercel.app"
 ]
 
 CORS_ALLOW_HEADERS = (

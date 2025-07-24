@@ -139,6 +139,9 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         
         'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES' : (
+        'rest_framework.permissions.AllowAny'
     )
     
 }
@@ -147,7 +150,8 @@ ALLOWED_HOSTS = ['campushub-ys56.onrender.com', '127.0.0.1', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = [
     "https://campushub-ys56.onrender.com",
-    "https://campus-hub-nine.vercel.app"
+    "https://campus-hub-nine.vercel.app",
+    "http://localhost:5173"
 ]
 
 

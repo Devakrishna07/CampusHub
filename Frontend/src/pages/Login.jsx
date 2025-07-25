@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import api from '../services/api';
 import logo from '../assets/logo.png';
 
@@ -36,7 +36,7 @@ function Login() {
             <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} className="rounded-xl p-2 bg-gray-900 m-4 w-[70%] hover:bg-white cursor-pointer" />
             <button className="bg-white px-4 py-1 rounded-full font-semibold m-3 hover:rounded-xl hover:bg-black hover:text-white">Login</button>
             <div className="flex flex-row w-full md:w-[80%] items-center justify-between pt-3">
-                <h3 className="md:text-lg hover:text-blue-500 cursor-pointer" onClick={navigate('/signup')}><a>create account</a></h3>
+                <h3 className="md:text-lg hover:text-blue-500 cursor-pointer"><Link to="/">Register now</Link></h3>
                 <h3 className="md:text-lg hover:text-blue-500 cursor-pointer"><a>Forgot password ?</a></h3>
             </div>
         </form>

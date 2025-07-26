@@ -23,7 +23,7 @@ function Login() {
             localStorage.setItem('accessToken',access);
             localStorage.setItem('refreshToken',refresh);
             alert("login sucessfull");
-            navigate('/home');
+            navigate('/event');
         }catch (err){
             console.error(err);
             alert("login failed");

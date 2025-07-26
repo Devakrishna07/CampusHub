@@ -2,14 +2,17 @@ import React, { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom';
 import api from '../services/api';
 import logo from '../assets/logo.png';
+import LoadingPage from '../components/LoadingPage';
 
 function Login() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
 
     const handleLogin = async(e) => {
         e.preventDefault();
+        setLoading(true);
         try{
             const response = await api.post('/users/token/', {
                 username,
@@ -24,6 +27,8 @@ function Login() {
         }catch (err){
             console.error(err);
             alert("login failed");
+        }finally{
+            setLoading(false);
         }
     };
 
@@ -40,6 +45,7 @@ function Login() {
                 <h3 className="md:text-lg hover:text-blue-500 cursor-pointer"><a>Forgot password ?</a></h3>
             </div>
         </form>
+        {loading && <LoadingPage />}
     </div>
   )
 }

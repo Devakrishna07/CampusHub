@@ -14,7 +14,7 @@ export default LinedText
 
 export function SideLinedText({text}) {
   return (
-    <div className='flex w-full items-center justify-start'>
+    <div className='flex w-full items-center justify-start pb-4'>
         <h1 className='text-white text-xl font-bold pr-2'>{text}</h1>
         <div className='flex-grow border border-white rounded-full'></div>
     </div>

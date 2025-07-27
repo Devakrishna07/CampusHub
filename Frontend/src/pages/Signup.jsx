@@ -40,7 +40,7 @@ function Signup() {
 
     return (
         <div className="w-screen min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-black to-gray-900 px-4">
-            <img src={logo} alt="logo" className='h-10 md:h-24 absolute top-3 left-3' />
+            {/*<img src={logo} alt="logo" className='h-10 md:h-24 absolute top-3 left-3' /> */}
             <form
                 onSubmit={handleLogin}
                 className="flex flex-col w-[95%] sm:w-[85%] md:w-[60%] lg:w-[40%] backdrop-blur-md bg-white/15 border border-white/20 shadow-xl py-6 px-6 items-center justify-center rounded-xl overflow-hidden"

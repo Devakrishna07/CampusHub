@@ -4,6 +4,7 @@ import { useNavigate, Link } from 'react-router-dom'
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
 import { FaWebAwesome } from 'react-icons/fa6'
 import SpanText1 from '../components/SpanText1'
+import api from '../services/api'
 
 function Eventpage() {
     return (

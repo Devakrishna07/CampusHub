@@ -13,8 +13,10 @@ function App() {
     <div>
       <NavBar />
         <Routes>
+          {/*Public Routes*/}
           <Route path='/login' element={<Login />} />
           <Route path='/' element={<Signup />} />
+          {/*Authenticated Routes*/}
           <Route path='/event' element={<Eventpage />} />
           <Route path='/home' element={<HomePage />} />
         </Routes>

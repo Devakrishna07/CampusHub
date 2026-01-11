@@ -20,6 +20,7 @@ import events.urls
 import accounts.urls 
 import registration.urls
 import matches.urls
+import scoring.urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,4 +28,5 @@ urlpatterns = [
     path('events/', include('events.urls')),    
     path('matches/', include('matches.urls')),
     path('registration/', include('registration.urls')),
+    path('scoring/', include('scoring.urls')),
 ]

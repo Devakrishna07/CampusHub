@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'events',
     'registration',
     'matches',
+    'scoring',
 ]
 
 MIDDLEWARE = [

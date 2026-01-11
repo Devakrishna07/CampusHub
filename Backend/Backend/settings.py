@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'registration',
     'matches',
     'scoring',
+    'imports.apps.ImportsConfig', 
 ]
 
 MIDDLEWARE = [

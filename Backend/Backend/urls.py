@@ -21,6 +21,7 @@ import accounts.urls
 import registration.urls
 import matches.urls
 import scoring.urls
+import imports.urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,4 +30,5 @@ urlpatterns = [
     path('matches/', include('matches.urls')),
     path('registration/', include('registration.urls')),
     path('scoring/', include('scoring.urls')),
+    path('imports/', include('imports.urls')),
 ]

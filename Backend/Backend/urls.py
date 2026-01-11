@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path, include
 import events.urls
 import accounts.urls 
+import registration.urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
     path('events/', include('events.urls')),    
+    path('registration/', include('registration.urls')),
 ]

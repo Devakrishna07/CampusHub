@@ -19,10 +19,12 @@ from django.urls import path, include
 import events.urls
 import accounts.urls 
 import registration.urls
+import matches.urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
     path('events/', include('events.urls')),    
+    path('matches/', include('matches.urls')),
     path('registration/', include('registration.urls')),
 ]
